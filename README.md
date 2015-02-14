@@ -8,4 +8,6 @@
 
 Загрузку изображений сделайте через [SDWebImage](https://raw.githubusercontent.com/AlexandrGraschenkov/HW_SlicedImages/master/Example.gif). Используйте [CocoaPods](http://cocoapods.org/) для подключения библиотеки.
 
+###### Придерживайтесь тех вещей, которые я показывал на паре. Говнокод принимать не буду.
+
 Задача со :star2:: масштабирование изображения.
