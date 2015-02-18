@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		238866081A93728F00C71175 /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 238866071A93728F00C71175 /* TableCell.m */; };
-		2388660B1A9375E800C71175 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2388660A1A9375E800C71175 /* DataController.m */; };
 		238A9F411A94BBB700CFF992 /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 238A9F401A94BBB700CFF992 /* NetManager.m */; };
 		A80A469A1A8F2409001442C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A46991A8F2409001442C8 /* main.m */; };
 		A80A469D1A8F2409001442C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A469C1A8F2409001442C8 /* AppDelegate.m */; };
@@ -32,8 +31,6 @@
 /* Begin PBXFileReference section */
 		238866061A93728F00C71175 /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
 		238866071A93728F00C71175 /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
-		238866091A9375E800C71175 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
-		2388660A1A9375E800C71175 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
 		238A9F3F1A94BBB700CFF992 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
 		238A9F401A94BBB700CFF992 /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
 		A80A46941A8F2409001442C8 /* HW_SlicedImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_SlicedImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,12 +69,11 @@
 		238866031A93717800C71175 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				238A9F3F1A94BBB700CFF992 /* NetManager.h */,
+				238A9F401A94BBB700CFF992 /* NetManager.m */,
 				A80A469B1A8F2409001442C8 /* AppDelegate.h */,
 				A80A469C1A8F2409001442C8 /* AppDelegate.m */,
-				238866061A93728F00C71175 /* TableCell.h */,
-				238866071A93728F00C71175 /* TableCell.m */,
-				238866091A9375E800C71175 /* DataController.h */,
-				2388660A1A9375E800C71175 /* DataController.m */,
+				238866041A93718000C71175 /* View */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -85,6 +81,9 @@
 		238866041A93718000C71175 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				238866061A93728F00C71175 /* TableCell.h */,
+				238866071A93728F00C71175 /* TableCell.m */,
+				A80A46A61A8F2409001442C8 /* LaunchScreen.xib */,
 				A80A46A11A8F2409001442C8 /* Main.storyboard */,
 			);
 			name = View;
@@ -95,8 +94,6 @@
 			children = (
 				A80A469E1A8F2409001442C8 /* ViewController.h */,
 				A80A469F1A8F2409001442C8 /* ViewController.m */,
-				238A9F3F1A94BBB700CFF992 /* NetManager.h */,
-				238A9F401A94BBB700CFF992 /* NetManager.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -122,11 +119,9 @@
 		A80A46961A8F2409001442C8 /* HW_SlicedImages */ = {
 			isa = PBXGroup;
 			children = (
-				238866051A93718800C71175 /* Controller */,
-				238866041A93718000C71175 /* View */,
 				238866031A93717800C71175 /* Modal */,
+				238866051A93718800C71175 /* Controller */,
 				A80A46A41A8F2409001442C8 /* Images.xcassets */,
-				A80A46A61A8F2409001442C8 /* LaunchScreen.xib */,
 				A80A46971A8F2409001442C8 /* Supporting Files */,
 			);
 			path = HW_SlicedImages;
@@ -262,7 +257,6 @@
 				238A9F411A94BBB700CFF992 /* NetManager.m in Sources */,
 				A80A469D1A8F2409001442C8 /* AppDelegate.m in Sources */,
 				238866081A93728F00C71175 /* TableCell.m in Sources */,
-				2388660B1A9375E800C71175 /* DataController.m in Sources */,
 				A80A469A1A8F2409001442C8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

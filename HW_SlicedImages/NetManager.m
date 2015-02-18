@@ -23,7 +23,8 @@
 -(void)getListImages:(void(^)(NSArray *, NSError *))
 completion{
     NSURL *url = [NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/55523423/NetExample/ListImages.json"];
-    [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse * response, NSError *error) {
+
+NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse * response, NSError *error) {
         if(!error){
         NSArray *objects = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
             
@@ -34,6 +35,7 @@ completion{
         }
         completion(nil,error);
         }];
+    [task resume];
         
 }
 

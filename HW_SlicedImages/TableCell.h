@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TableCell : UITableViewCell
-@property (weak,nonatomic) IBOutlet UILabel *Label;
-
+@property (nonatomic, strong) NSDictionary *imgs;
 @end
