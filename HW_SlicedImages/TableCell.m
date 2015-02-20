@@ -7,9 +7,15 @@
 //
 
 #import "TableCell.h"
-
-@interface TableCell()
-{ }
+#import <SDWebImage/UIImageView+WebCache.h>
+@interface TableCell() <UIScrollViewDelegate>
+{
+    CGFloat rowsCount;
+    CGFloat columnsCount;
+    CGFloat elemWidth;
+    CGFloat elemHieght;
+    NSArray *imagesArray;
+}
 @property (nonatomic, weak) IBOutlet UIImageView *imgView;
 @property (nonatomic, weak) IBOutlet UILabel *label;
 @end

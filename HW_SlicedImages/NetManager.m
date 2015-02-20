@@ -20,7 +20,7 @@
 }
 
 
--(void)getListImages:(void(^)(NSArray *, NSError *))
+-(void)getTtiles:(void(^)(NSArray *, NSError *))
 completion{
     NSURL *url = [NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/55523423/NetExample/ListImages.json"];
 

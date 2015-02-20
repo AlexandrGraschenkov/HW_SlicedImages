@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface NetManager : UITableViewCell
-
++(instancetype)sharedInstance;
+-(void)getTtiles:(void(^)(NSArray *, NSError *))completion;
 @end

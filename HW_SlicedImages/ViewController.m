@@ -5,10 +5,11 @@
 //  Created by Alexander on 14.02.15.
 //  Copyright (c) 2015 Alexander. All rights reserved.
 //
-
+#import "NetManager.h"
 #import "ViewController.h"
 #import "TableCell.h"
-#import "NetManager.h"
+#import "SDWebImage/UIImageView+WebCache.h"
+#import "MyViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -27,7 +28,7 @@
 -(void)reloadData
 {
     [[NetManager sharedInstance]
-     getListImages:^(NSArray *arr, NSError *error){
+     getTtiles:^(NSArray *arr, NSError *error){
          imgsArray = arr;
          [self.table reloadData];
      }];
@@ -42,7 +43,15 @@
     static NSString* identifier = @"Cell";
     TableCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     cell.imgs = imgsArray[indexPath.row];
+    cell.textLabel.text = imgsArray[indexPath.row][@"folder_name"];
     return cell;
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *indexPath = self.table.indexPathForSelectedRow;
+    MyViewController *control = segue.destinationViewController;
+    [control setDict:imgsArray[indexPath.row]];
 }
 
 - (void)didReceiveMemoryWarning {
