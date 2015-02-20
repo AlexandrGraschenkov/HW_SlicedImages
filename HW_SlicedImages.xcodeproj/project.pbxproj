@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62775C6A25E2A3DD9B75D834 /* libPods-HW_SlicedImages.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58210587244571EE4190FD39 /* libPods-HW_SlicedImages.a */; };
 		A80A469A1A8F2409001442C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A46991A8F2409001442C8 /* main.m */; };
 		A80A469D1A8F2409001442C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A469C1A8F2409001442C8 /* AppDelegate.m */; };
-		A80A46A01A8F2409001442C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A469F1A8F2409001442C8 /* ViewController.m */; };
 		A80A46A31A8F2409001442C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80A46A11A8F2409001442C8 /* Main.storyboard */; };
 		A80A46A51A8F2409001442C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80A46A41A8F2409001442C8 /* Images.xcassets */; };
 		A80A46A81A8F2409001442C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A80A46A61A8F2409001442C8 /* LaunchScreen.xib */; };
 		A80A46B41A8F2409001442C8 /* HW_SlicedImagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A46B31A8F2409001442C8 /* HW_SlicedImagesTests.m */; };
+		B26C3CB91A96622D00E71C05 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26C3CB81A96622D00E71C05 /* DetailViewController.m */; };
+		B2A79AA21A94E4380062FAFF /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A79AA11A94E4380062FAFF /* TableViewController.m */; };
+		B2A79AA51A94E7A50062FAFF /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A79AA41A94E7A50062FAFF /* NetManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +30,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F1B494793436C53EE07C5CB /* Pods-HW_SlicedImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW_SlicedImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HW_SlicedImages/Pods-HW_SlicedImages.debug.xcconfig"; sourceTree = "<group>"; };
+		527FE017EEED1F17C4A172B6 /* Pods-HW_SlicedImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW_SlicedImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-HW_SlicedImages/Pods-HW_SlicedImages.release.xcconfig"; sourceTree = "<group>"; };
+		58210587244571EE4190FD39 /* libPods-HW_SlicedImages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HW_SlicedImages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A46941A8F2409001442C8 /* HW_SlicedImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_SlicedImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A46981A8F2409001442C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A80A46991A8F2409001442C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A80A469B1A8F2409001442C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A80A469C1A8F2409001442C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A80A469E1A8F2409001442C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A80A469F1A8F2409001442C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A80A46A21A8F2409001442C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A80A46A41A8F2409001442C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A80A46A71A8F2409001442C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A80A46AD1A8F2409001442C8 /* HW_SlicedImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW_SlicedImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A46B21A8F2409001442C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A80A46B31A8F2409001442C8 /* HW_SlicedImagesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW_SlicedImagesTests.m; sourceTree = "<group>"; };
+		B26C3CB71A96622D00E71C05 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B26C3CB81A96622D00E71C05 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B2A79AA01A94E4380062FAFF /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B2A79AA11A94E4380062FAFF /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B2A79AA31A94E7A50062FAFF /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		B2A79AA41A94E7A50062FAFF /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62775C6A25E2A3DD9B75D834 /* libPods-HW_SlicedImages.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +71,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34E67E352C371138C464A871 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F1B494793436C53EE07C5CB /* Pods-HW_SlicedImages.debug.xcconfig */,
+				527FE017EEED1F17C4A172B6 /* Pods-HW_SlicedImages.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		522AD1D6D1E67B848C59AE38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58210587244571EE4190FD39 /* libPods-HW_SlicedImages.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A80A468B1A8F2409001442C8 = {
 			isa = PBXGroup;
 			children = (
 				A80A46961A8F2409001442C8 /* HW_SlicedImages */,
 				A80A46B01A8F2409001442C8 /* HW_SlicedImagesTests */,
 				A80A46951A8F2409001442C8 /* Products */,
+				34E67E352C371138C464A871 /* Pods */,
+				522AD1D6D1E67B848C59AE38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +111,10 @@
 		A80A46961A8F2409001442C8 /* HW_SlicedImages */ = {
 			isa = PBXGroup;
 			children = (
-				A80A469B1A8F2409001442C8 /* AppDelegate.h */,
-				A80A469C1A8F2409001442C8 /* AppDelegate.m */,
-				A80A469E1A8F2409001442C8 /* ViewController.h */,
-				A80A469F1A8F2409001442C8 /* ViewController.m */,
-				A80A46A11A8F2409001442C8 /* Main.storyboard */,
+				B26C3CBC1A96830400E71C05 /* View */,
+				B26C3CBA1A9682F800E71C05 /* Model */,
+				B26C3CBD1A96830A00E71C05 /* Controller */,
 				A80A46A41A8F2409001442C8 /* Images.xcassets */,
-				A80A46A61A8F2409001442C8 /* LaunchScreen.xib */,
 				A80A46971A8F2409001442C8 /* Supporting Files */,
 			);
 			path = HW_SlicedImages;
@@ -119,6 +146,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B26C3CBA1A9682F800E71C05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A80A469C1A8F2409001442C8 /* AppDelegate.m */,
+				A80A469B1A8F2409001442C8 /* AppDelegate.h */,
+				B2A79AA31A94E7A50062FAFF /* NetManager.h */,
+				B2A79AA41A94E7A50062FAFF /* NetManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B26C3CBC1A96830400E71C05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A80A46A11A8F2409001442C8 /* Main.storyboard */,
+				A80A46A61A8F2409001442C8 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B26C3CBD1A96830A00E71C05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2A79AA01A94E4380062FAFF /* TableViewController.h */,
+				B2A79AA11A94E4380062FAFF /* TableViewController.m */,
+				B26C3CB71A96622D00E71C05 /* DetailViewController.h */,
+				B26C3CB81A96622D00E71C05 /* DetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A80A46B71A8F2409001442C8 /* Build configuration list for PBXNativeTarget "HW_SlicedImages" */;
 			buildPhases = (
+				3A9404D70A96C00F3571997C /* Check Pods Manifest.lock */,
 				A80A46901A8F2409001442C8 /* Sources */,
 				A80A46911A8F2409001442C8 /* Frameworks */,
 				A80A46921A8F2409001442C8 /* Resources */,
+				9684D2E1E4430AA9FD231347 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,13 +274,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A9404D70A96C00F3571997C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9684D2E1E4430AA9FD231347 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HW_SlicedImages/Pods-HW_SlicedImages-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A80A46901A8F2409001442C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80A46A01A8F2409001442C8 /* ViewController.m in Sources */,
+				B26C3CB91A96622D00E71C05 /* DetailViewController.m in Sources */,
 				A80A469D1A8F2409001442C8 /* AppDelegate.m in Sources */,
+				B2A79AA51A94E7A50062FAFF /* NetManager.m in Sources */,
+				B2A79AA21A94E4380062FAFF /* TableViewController.m in Sources */,
 				A80A469A1A8F2409001442C8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +436,7 @@
 		};
 		A80A46B81A8F2409001442C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F1B494793436C53EE07C5CB /* Pods-HW_SlicedImages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HW_SlicedImages/Info.plist;
@@ -351,6 +447,7 @@
 		};
 		A80A46B91A8F2409001442C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527FE017EEED1F17C4A172B6 /* Pods-HW_SlicedImages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HW_SlicedImages/Info.plist;
@@ -412,6 +509,7 @@
 				A80A46B91A8F2409001442C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A80A46BA1A8F2409001442C8 /* Build configuration list for PBXNativeTarget "HW_SlicedImagesTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +518,7 @@
 				A80A46BC1A8F2409001442C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
