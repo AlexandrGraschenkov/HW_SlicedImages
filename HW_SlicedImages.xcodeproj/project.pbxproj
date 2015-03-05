@@ -7,50 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A80A469A1A8F2409001442C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A46991A8F2409001442C8 /* main.m */; };
-		A80A469D1A8F2409001442C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A469C1A8F2409001442C8 /* AppDelegate.m */; };
-		A80A46A01A8F2409001442C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A469F1A8F2409001442C8 /* ViewController.m */; };
-		A80A46A31A8F2409001442C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80A46A11A8F2409001442C8 /* Main.storyboard */; };
-		A80A46A51A8F2409001442C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80A46A41A8F2409001442C8 /* Images.xcassets */; };
-		A80A46A81A8F2409001442C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A80A46A61A8F2409001442C8 /* LaunchScreen.xib */; };
-		A80A46B41A8F2409001442C8 /* HW_SlicedImagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A46B31A8F2409001442C8 /* HW_SlicedImagesTests.m */; };
+		7E1C4CD8D09709E5F2E0854C /* libPods-HW_SlicedImages.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8308A562B5A9A3A3428669 /* libPods-HW_SlicedImages.a */; };
+		84A3A8361A98BCA700EA3940 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A8351A98BCA700EA3940 /* main.m */; };
+		84A3A8391A98BCA700EA3940 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A8381A98BCA700EA3940 /* AppDelegate.m */; };
+		84A3A83C1A98BCA700EA3940 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A83B1A98BCA700EA3940 /* ViewController.m */; };
+		84A3A83F1A98BCA700EA3940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A3A83D1A98BCA700EA3940 /* Main.storyboard */; };
+		84A3A8411A98BCA700EA3940 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A3A8401A98BCA700EA3940 /* Images.xcassets */; };
+		84A3A8441A98BCA700EA3940 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A3A8421A98BCA700EA3940 /* LaunchScreen.xib */; };
+		84A3A8501A98BCA700EA3940 /* HW_SlicedImagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A84F1A98BCA700EA3940 /* HW_SlicedImagesTests.m */; };
+		84A3A85E1A98EE3700EA3940 /* ImageViewContr.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A85D1A98EE3700EA3940 /* ImageViewContr.m */; };
+		84A3A8771A98FBF500EA3940 /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A8761A98FBF500EA3940 /* NetManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A80A46AE1A8F2409001442C8 /* PBXContainerItemProxy */ = {
+		84A3A84A1A98BCA700EA3940 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A80A468C1A8F2409001442C8 /* Project object */;
+			containerPortal = 84A3A8281A98BCA700EA3940 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A80A46931A8F2409001442C8;
+			remoteGlobalIDString = 84A3A82F1A98BCA700EA3940;
 			remoteInfo = HW_SlicedImages;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A80A46941A8F2409001442C8 /* HW_SlicedImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_SlicedImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A80A46981A8F2409001442C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A80A46991A8F2409001442C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A80A469B1A8F2409001442C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A80A469C1A8F2409001442C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A80A469E1A8F2409001442C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A80A469F1A8F2409001442C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A80A46A21A8F2409001442C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A80A46A41A8F2409001442C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A80A46A71A8F2409001442C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A80A46AD1A8F2409001442C8 /* HW_SlicedImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW_SlicedImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A80A46B21A8F2409001442C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A80A46B31A8F2409001442C8 /* HW_SlicedImagesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW_SlicedImagesTests.m; sourceTree = "<group>"; };
+		70F1842121A5D22ADDB71662 /* Pods-HW_SlicedImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW_SlicedImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HW_SlicedImages/Pods-HW_SlicedImages.debug.xcconfig"; sourceTree = "<group>"; };
+		84A3A8301A98BCA700EA3940 /* HW_SlicedImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_SlicedImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3A8341A98BCA700EA3940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A3A8351A98BCA700EA3940 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84A3A8371A98BCA700EA3940 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84A3A8381A98BCA700EA3940 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84A3A83A1A98BCA700EA3940 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84A3A83B1A98BCA700EA3940 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84A3A83E1A98BCA700EA3940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A3A8401A98BCA700EA3940 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84A3A8431A98BCA700EA3940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		84A3A8491A98BCA700EA3940 /* HW_SlicedImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW_SlicedImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3A84E1A98BCA700EA3940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A3A84F1A98BCA700EA3940 /* HW_SlicedImagesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW_SlicedImagesTests.m; sourceTree = "<group>"; };
+		84A3A85C1A98EE3700EA3940 /* ImageViewContr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewContr.h; sourceTree = "<group>"; };
+		84A3A85D1A98EE3700EA3940 /* ImageViewContr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewContr.m; sourceTree = "<group>"; };
+		84A3A8751A98FBF500EA3940 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		84A3A8761A98FBF500EA3940 /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
+		CC8308A562B5A9A3A3428669 /* libPods-HW_SlicedImages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HW_SlicedImages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC5F08058E06D8E38BE874C /* Pods-HW_SlicedImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW_SlicedImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-HW_SlicedImages/Pods-HW_SlicedImages.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A80A46911A8F2409001442C8 /* Frameworks */ = {
+		84A3A82D1A98BCA700EA3940 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E1C4CD8D09709E5F2E0854C /* libPods-HW_SlicedImages.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A80A46AA1A8F2409001442C8 /* Frameworks */ = {
+		84A3A8461A98BCA700EA3940 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,75 +71,124 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A80A468B1A8F2409001442C8 = {
+		3C47AA174102A2A5A2552E17 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A80A46961A8F2409001442C8 /* HW_SlicedImages */,
-				A80A46B01A8F2409001442C8 /* HW_SlicedImagesTests */,
-				A80A46951A8F2409001442C8 /* Products */,
+				70F1842121A5D22ADDB71662 /* Pods-HW_SlicedImages.debug.xcconfig */,
+				DFC5F08058E06D8E38BE874C /* Pods-HW_SlicedImages.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84A3A8271A98BCA700EA3940 = {
+			isa = PBXGroup;
+			children = (
+				84A3A8321A98BCA700EA3940 /* HW_SlicedImages */,
+				84A3A84C1A98BCA700EA3940 /* HW_SlicedImagesTests */,
+				84A3A8311A98BCA700EA3940 /* Products */,
+				3C47AA174102A2A5A2552E17 /* Pods */,
+				90E74D08FAE41C670BA1C1C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		A80A46951A8F2409001442C8 /* Products */ = {
+		84A3A8311A98BCA700EA3940 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A80A46941A8F2409001442C8 /* HW_SlicedImages.app */,
-				A80A46AD1A8F2409001442C8 /* HW_SlicedImagesTests.xctest */,
+				84A3A8301A98BCA700EA3940 /* HW_SlicedImages.app */,
+				84A3A8491A98BCA700EA3940 /* HW_SlicedImagesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A80A46961A8F2409001442C8 /* HW_SlicedImages */ = {
+		84A3A8321A98BCA700EA3940 /* HW_SlicedImages */ = {
 			isa = PBXGroup;
 			children = (
-				A80A469B1A8F2409001442C8 /* AppDelegate.h */,
-				A80A469C1A8F2409001442C8 /* AppDelegate.m */,
-				A80A469E1A8F2409001442C8 /* ViewController.h */,
-				A80A469F1A8F2409001442C8 /* ViewController.m */,
-				A80A46A11A8F2409001442C8 /* Main.storyboard */,
-				A80A46A41A8F2409001442C8 /* Images.xcassets */,
-				A80A46A61A8F2409001442C8 /* LaunchScreen.xib */,
-				A80A46971A8F2409001442C8 /* Supporting Files */,
+				84A3A86A1A98F3FE00EA3940 /* Model */,
+				84A3A86B1A98F41A00EA3940 /* View */,
+				84A3A86D1A98F44700EA3940 /* Controller */,
+				84A3A8331A98BCA700EA3940 /* Supporting Files */,
 			);
 			path = HW_SlicedImages;
 			sourceTree = "<group>";
 		};
-		A80A46971A8F2409001442C8 /* Supporting Files */ = {
+		84A3A8331A98BCA700EA3940 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A80A46981A8F2409001442C8 /* Info.plist */,
-				A80A46991A8F2409001442C8 /* main.m */,
+				84A3A8341A98BCA700EA3940 /* Info.plist */,
+				84A3A8351A98BCA700EA3940 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A80A46B01A8F2409001442C8 /* HW_SlicedImagesTests */ = {
+		84A3A84C1A98BCA700EA3940 /* HW_SlicedImagesTests */ = {
 			isa = PBXGroup;
 			children = (
-				A80A46B31A8F2409001442C8 /* HW_SlicedImagesTests.m */,
-				A80A46B11A8F2409001442C8 /* Supporting Files */,
+				84A3A84F1A98BCA700EA3940 /* HW_SlicedImagesTests.m */,
+				84A3A84D1A98BCA700EA3940 /* Supporting Files */,
 			);
 			path = HW_SlicedImagesTests;
 			sourceTree = "<group>";
 		};
-		A80A46B11A8F2409001442C8 /* Supporting Files */ = {
+		84A3A84D1A98BCA700EA3940 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A80A46B21A8F2409001442C8 /* Info.plist */,
+				84A3A84E1A98BCA700EA3940 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A3A86A1A98F3FE00EA3940 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84A3A8371A98BCA700EA3940 /* AppDelegate.h */,
+				84A3A8381A98BCA700EA3940 /* AppDelegate.m */,
+				84A3A8751A98FBF500EA3940 /* NetManager.h */,
+				84A3A8761A98FBF500EA3940 /* NetManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84A3A86B1A98F41A00EA3940 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84A3A8421A98BCA700EA3940 /* LaunchScreen.xib */,
+				84A3A8401A98BCA700EA3940 /* Images.xcassets */,
+				84A3A83D1A98BCA700EA3940 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84A3A86D1A98F44700EA3940 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84A3A83A1A98BCA700EA3940 /* ViewController.h */,
+				84A3A83B1A98BCA700EA3940 /* ViewController.m */,
+				84A3A85D1A98EE3700EA3940 /* ImageViewContr.m */,
+				84A3A85C1A98EE3700EA3940 /* ImageViewContr.h */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		90E74D08FAE41C670BA1C1C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC8308A562B5A9A3A3428669 /* libPods-HW_SlicedImages.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A80A46931A8F2409001442C8 /* HW_SlicedImages */ = {
+		84A3A82F1A98BCA700EA3940 /* HW_SlicedImages */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A80A46B71A8F2409001442C8 /* Build configuration list for PBXNativeTarget "HW_SlicedImages" */;
+			buildConfigurationList = 84A3A8531A98BCA700EA3940 /* Build configuration list for PBXNativeTarget "HW_SlicedImages" */;
 			buildPhases = (
-				A80A46901A8F2409001442C8 /* Sources */,
-				A80A46911A8F2409001442C8 /* Frameworks */,
-				A80A46921A8F2409001442C8 /* Resources */,
+				28F8CE60EDC5B9738882954F /* Check Pods Manifest.lock */,
+				84A3A82C1A98BCA700EA3940 /* Sources */,
+				84A3A82D1A98BCA700EA3940 /* Frameworks */,
+				84A3A82E1A98BCA700EA3940 /* Resources */,
+				FB76F0BCF78BE97755193D8F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,46 +196,46 @@
 			);
 			name = HW_SlicedImages;
 			productName = HW_SlicedImages;
-			productReference = A80A46941A8F2409001442C8 /* HW_SlicedImages.app */;
+			productReference = 84A3A8301A98BCA700EA3940 /* HW_SlicedImages.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A80A46AC1A8F2409001442C8 /* HW_SlicedImagesTests */ = {
+		84A3A8481A98BCA700EA3940 /* HW_SlicedImagesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A80A46BA1A8F2409001442C8 /* Build configuration list for PBXNativeTarget "HW_SlicedImagesTests" */;
+			buildConfigurationList = 84A3A8561A98BCA700EA3940 /* Build configuration list for PBXNativeTarget "HW_SlicedImagesTests" */;
 			buildPhases = (
-				A80A46A91A8F2409001442C8 /* Sources */,
-				A80A46AA1A8F2409001442C8 /* Frameworks */,
-				A80A46AB1A8F2409001442C8 /* Resources */,
+				84A3A8451A98BCA700EA3940 /* Sources */,
+				84A3A8461A98BCA700EA3940 /* Frameworks */,
+				84A3A8471A98BCA700EA3940 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A80A46AF1A8F2409001442C8 /* PBXTargetDependency */,
+				84A3A84B1A98BCA700EA3940 /* PBXTargetDependency */,
 			);
 			name = HW_SlicedImagesTests;
 			productName = HW_SlicedImagesTests;
-			productReference = A80A46AD1A8F2409001442C8 /* HW_SlicedImagesTests.xctest */;
+			productReference = 84A3A8491A98BCA700EA3940 /* HW_SlicedImagesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A80A468C1A8F2409001442C8 /* Project object */ = {
+		84A3A8281A98BCA700EA3940 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = Alexander;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = ITIS;
 				TargetAttributes = {
-					A80A46931A8F2409001442C8 = {
-						CreatedOnToolsVersion = 6.1.1;
+					84A3A82F1A98BCA700EA3940 = {
+						CreatedOnToolsVersion = 6.0.1;
 					};
-					A80A46AC1A8F2409001442C8 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = A80A46931A8F2409001442C8;
+					84A3A8481A98BCA700EA3940 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 84A3A82F1A98BCA700EA3940;
 					};
 				};
 			};
-			buildConfigurationList = A80A468F1A8F2409001442C8 /* Build configuration list for PBXProject "HW_SlicedImages" */;
+			buildConfigurationList = 84A3A82B1A98BCA700EA3940 /* Build configuration list for PBXProject "HW_SlicedImages" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,29 +243,29 @@
 				en,
 				Base,
 			);
-			mainGroup = A80A468B1A8F2409001442C8;
-			productRefGroup = A80A46951A8F2409001442C8 /* Products */;
+			mainGroup = 84A3A8271A98BCA700EA3940;
+			productRefGroup = 84A3A8311A98BCA700EA3940 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A80A46931A8F2409001442C8 /* HW_SlicedImages */,
-				A80A46AC1A8F2409001442C8 /* HW_SlicedImagesTests */,
+				84A3A82F1A98BCA700EA3940 /* HW_SlicedImages */,
+				84A3A8481A98BCA700EA3940 /* HW_SlicedImagesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A80A46921A8F2409001442C8 /* Resources */ = {
+		84A3A82E1A98BCA700EA3940 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80A46A31A8F2409001442C8 /* Main.storyboard in Resources */,
-				A80A46A81A8F2409001442C8 /* LaunchScreen.xib in Resources */,
-				A80A46A51A8F2409001442C8 /* Images.xcassets in Resources */,
+				84A3A83F1A98BCA700EA3940 /* Main.storyboard in Resources */,
+				84A3A8441A98BCA700EA3940 /* LaunchScreen.xib in Resources */,
+				84A3A8411A98BCA700EA3940 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A80A46AB1A8F2409001442C8 /* Resources */ = {
+		84A3A8471A98BCA700EA3940 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,48 +274,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28F8CE60EDC5B9738882954F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB76F0BCF78BE97755193D8F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HW_SlicedImages/Pods-HW_SlicedImages-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		A80A46901A8F2409001442C8 /* Sources */ = {
+		84A3A82C1A98BCA700EA3940 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80A46A01A8F2409001442C8 /* ViewController.m in Sources */,
-				A80A469D1A8F2409001442C8 /* AppDelegate.m in Sources */,
-				A80A469A1A8F2409001442C8 /* main.m in Sources */,
+				84A3A83C1A98BCA700EA3940 /* ViewController.m in Sources */,
+				84A3A8771A98FBF500EA3940 /* NetManager.m in Sources */,
+				84A3A8391A98BCA700EA3940 /* AppDelegate.m in Sources */,
+				84A3A85E1A98EE3700EA3940 /* ImageViewContr.m in Sources */,
+				84A3A8361A98BCA700EA3940 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A80A46A91A8F2409001442C8 /* Sources */ = {
+		84A3A8451A98BCA700EA3940 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80A46B41A8F2409001442C8 /* HW_SlicedImagesTests.m in Sources */,
+				84A3A8501A98BCA700EA3940 /* HW_SlicedImagesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A80A46AF1A8F2409001442C8 /* PBXTargetDependency */ = {
+		84A3A84B1A98BCA700EA3940 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A80A46931A8F2409001442C8 /* HW_SlicedImages */;
-			targetProxy = A80A46AE1A8F2409001442C8 /* PBXContainerItemProxy */;
+			target = 84A3A82F1A98BCA700EA3940 /* HW_SlicedImages */;
+			targetProxy = 84A3A84A1A98BCA700EA3940 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A80A46A11A8F2409001442C8 /* Main.storyboard */ = {
+		84A3A83D1A98BCA700EA3940 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A80A46A21A8F2409001442C8 /* Base */,
+				84A3A83E1A98BCA700EA3940 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A80A46A61A8F2409001442C8 /* LaunchScreen.xib */ = {
+		84A3A8421A98BCA700EA3940 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A80A46A71A8F2409001442C8 /* Base */,
+				84A3A8431A98BCA700EA3940 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +358,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A80A46B51A8F2409001442C8 /* Debug */ = {
+		84A3A8511A98BCA700EA3940 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,14 +392,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		A80A46B61A8F2409001442C8 /* Release */ = {
+		84A3A8521A98BCA700EA3940 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,15 +427,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		A80A46B81A8F2409001442C8 /* Debug */ = {
+		84A3A8541A98BCA700EA3940 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70F1842121A5D22ADDB71662 /* Pods-HW_SlicedImages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HW_SlicedImages/Info.plist;
@@ -349,8 +445,9 @@
 			};
 			name = Debug;
 		};
-		A80A46B91A8F2409001442C8 /* Release */ = {
+		84A3A8551A98BCA700EA3940 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFC5F08058E06D8E38BE874C /* Pods-HW_SlicedImages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HW_SlicedImages/Info.plist;
@@ -359,7 +456,7 @@
 			};
 			name = Release;
 		};
-		A80A46BB1A8F2409001442C8 /* Debug */ = {
+		84A3A8571A98BCA700EA3940 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -378,7 +475,7 @@
 			};
 			name = Debug;
 		};
-		A80A46BC1A8F2409001442C8 /* Release */ = {
+		84A3A8581A98BCA700EA3940 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -396,32 +493,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A80A468F1A8F2409001442C8 /* Build configuration list for PBXProject "HW_SlicedImages" */ = {
+		84A3A82B1A98BCA700EA3940 /* Build configuration list for PBXProject "HW_SlicedImages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A80A46B51A8F2409001442C8 /* Debug */,
-				A80A46B61A8F2409001442C8 /* Release */,
+				84A3A8511A98BCA700EA3940 /* Debug */,
+				84A3A8521A98BCA700EA3940 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A80A46B71A8F2409001442C8 /* Build configuration list for PBXNativeTarget "HW_SlicedImages" */ = {
+		84A3A8531A98BCA700EA3940 /* Build configuration list for PBXNativeTarget "HW_SlicedImages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A80A46B81A8F2409001442C8 /* Debug */,
-				A80A46B91A8F2409001442C8 /* Release */,
+				84A3A8541A98BCA700EA3940 /* Debug */,
+				84A3A8551A98BCA700EA3940 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		A80A46BA1A8F2409001442C8 /* Build configuration list for PBXNativeTarget "HW_SlicedImagesTests" */ = {
+		84A3A8561A98BCA700EA3940 /* Build configuration list for PBXNativeTarget "HW_SlicedImagesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A80A46BB1A8F2409001442C8 /* Debug */,
-				A80A46BC1A8F2409001442C8 /* Release */,
+				84A3A8571A98BCA700EA3940 /* Debug */,
+				84A3A8581A98BCA700EA3940 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A80A468C1A8F2409001442C8 /* Project object */;
+	rootObject = 84A3A8281A98BCA700EA3940 /* Project object */;
 }

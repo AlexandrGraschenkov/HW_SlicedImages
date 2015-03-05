@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0610"
+   LastUpgradeVersion = "0600"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A80A46931A8F2409001442C8"
+               BlueprintIdentifier = "84A3A82F1A98BCA700EA3940"
                BuildableName = "HW_SlicedImages.app"
                BlueprintName = "HW_SlicedImages"
                ReferencedContainer = "container:HW_SlicedImages.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A80A46AC1A8F2409001442C8"
+               BlueprintIdentifier = "84A3A8481A98BCA700EA3940"
                BuildableName = "HW_SlicedImagesTests.xctest"
                BlueprintName = "HW_SlicedImagesTests"
                ReferencedContainer = "container:HW_SlicedImages.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A80A46AC1A8F2409001442C8"
+               BlueprintIdentifier = "84A3A8481A98BCA700EA3940"
                BuildableName = "HW_SlicedImagesTests.xctest"
                BlueprintName = "HW_SlicedImagesTests"
                ReferencedContainer = "container:HW_SlicedImages.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A80A46931A8F2409001442C8"
+            BlueprintIdentifier = "84A3A82F1A98BCA700EA3940"
             BuildableName = "HW_SlicedImages.app"
             BlueprintName = "HW_SlicedImages"
             ReferencedContainer = "container:HW_SlicedImages.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A80A46931A8F2409001442C8"
+            BlueprintIdentifier = "84A3A82F1A98BCA700EA3940"
             BuildableName = "HW_SlicedImages.app"
             BlueprintName = "HW_SlicedImages"
             ReferencedContainer = "container:HW_SlicedImages.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A80A46931A8F2409001442C8"
+            BlueprintIdentifier = "84A3A82F1A98BCA700EA3940"
             BuildableName = "HW_SlicedImages.app"
             BlueprintName = "HW_SlicedImages"
             ReferencedContainer = "container:HW_SlicedImages.xcodeproj">
