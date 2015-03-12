@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FolderCell.h
 //  HW_SlicedImages
 //
 //  Created by Артур Сагидулин on 19.02.15.
@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NetManager.h" 
 
-@interface ViewController : UIViewController
+@interface FolderCell : UITableViewCell
 
+@property (nonatomic,strong) NSDictionary *folder;
 
 @end
-
