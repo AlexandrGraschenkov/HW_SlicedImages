@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vPX-1X-NV9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -61,10 +62,10 @@
                                 <exclude reference="Um4-42-rgS"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="KGT-3O-IUV"/>
                                 <exclude reference="MRA-oV-hlO"/>
                                 <exclude reference="R6V-Cx-97y"/>
                                 <exclude reference="vfJ-Kg-mHM"/>
-                                <exclude reference="KGT-3O-IUV"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -72,10 +73,10 @@
                                 <include reference="Um4-42-rgS"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="KGT-3O-IUV"/>
                                 <include reference="MRA-oV-hlO"/>
                                 <include reference="R6V-Cx-97y"/>
                                 <include reference="vfJ-Kg-mHM"/>
-                                <include reference="KGT-3O-IUV"/>
                             </mask>
                         </variation>
                     </view>
@@ -116,10 +117,10 @@
                                 <exclude reference="Fyf-Vr-m7j"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="SyB-dw-PvI"/>
                                 <exclude reference="6Vi-eM-2og"/>
                                 <exclude reference="MnM-Bs-LkW"/>
                                 <exclude reference="tt6-cf-utG"/>
-                                <exclude reference="SyB-dw-PvI"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -127,10 +128,10 @@
                                 <include reference="Fyf-Vr-m7j"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="SyB-dw-PvI"/>
                                 <include reference="6Vi-eM-2og"/>
                                 <include reference="MnM-Bs-LkW"/>
                                 <include reference="tt6-cf-utG"/>
-                                <include reference="SyB-dw-PvI"/>
                             </mask>
                         </variation>
                     </view>
