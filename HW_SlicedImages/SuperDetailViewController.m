@@ -11,14 +11,19 @@
 
 @implementation SuperDetailViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    [self.scrollView setScrollEnabled:YES];
+    [self.scrollView setContentSize:CGSizeMake(800, 500)];
+    
     [self instanceSizes];
     [self createArrayOfEmptyImages];
     [self loadingImages];
-    self.scrollView.minimumZoomScale=0.5;
+    
+    self.scrollView.minimumZoomScale=0.0;
     self.scrollView.maximumZoomScale=6.0;
 }
 
