@@ -40,20 +40,10 @@
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="tgL-J0-fd9"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYC-JO-kuB">
-                                                    <rect key="frame" x="82" y="23" width="510" height="37"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="oYC-JO-kuB" firstAttribute="leading" secondItem="Rab-fu-ghZ" secondAttribute="trailing" constant="14" id="IRM-nt-c9a"/>
                                                 <constraint firstAttribute="centerY" secondItem="Rab-fu-ghZ" secondAttribute="centerY" id="NS7-pI-aRP"/>
-                                                <constraint firstItem="oYC-JO-kuB" firstAttribute="trailing" secondItem="Qh3-Hv-iix" secondAttribute="trailingMargin" id="Wcu-jg-lrU"/>
                                                 <constraint firstItem="Rab-fu-ghZ" firstAttribute="leading" secondItem="Qh3-Hv-iix" secondAttribute="leadingMargin" id="aKC-4l-gkG"/>
-                                                <constraint firstAttribute="centerY" secondItem="oYC-JO-kuB" secondAttribute="centerY" id="vLX-IU-Wav"/>
-                                                <constraint firstItem="oYC-JO-kuB" firstAttribute="trailing" secondItem="Qh3-Hv-iix" secondAttribute="trailingMargin" id="wEh-6i-zuX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -63,7 +53,6 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="eoS-1F-bN7"/>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="tsh-RQ-g1t"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -124,6 +113,9 @@
                                     <constraint firstAttribute="bottom" secondItem="aka-ag-nuK" secondAttribute="bottom" id="cZW-ea-570"/>
                                     <constraint firstItem="aka-ag-nuK" firstAttribute="leading" secondItem="6BE-Ge-tu1" secondAttribute="leading" id="wAI-oO-mYs"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="gOC-Fm-sE8" id="ZxF-yM-yPc"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

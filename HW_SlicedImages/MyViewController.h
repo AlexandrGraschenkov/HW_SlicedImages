@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyViewController : UITableViewController
+@interface MyViewController : UIViewController
 @property (nonatomic, strong) NSDictionary *dict;
 @end

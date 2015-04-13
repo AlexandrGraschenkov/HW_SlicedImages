@@ -26,9 +26,8 @@
 {
     _imgs = imgs;
     self.label.text = imgs[@""];
-    NSURL *imgURL =[NSURL URLWithString:imgs[@""]];
-    self.imgView.image = nil;
-    [self.imgView sd_setImageWithURL: imgURL];
+    NSURL *imageURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://dl.dropboxusercontent.com/u/55523423/NetExample/%@/%d_%d.png", self.imgs[@"folder_name"]]];
+    [self.imgView sd_setImageWithURL: imageURL];
 }
 
 @end

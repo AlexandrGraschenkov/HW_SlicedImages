@@ -81,7 +81,6 @@
 				238A9F401A94BBB700CFF992 /* NetManager.m */,
 				A80A469B1A8F2409001442C8 /* AppDelegate.h */,
 				A80A469C1A8F2409001442C8 /* AppDelegate.m */,
-				238866041A93718000C71175 /* View */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -140,6 +139,7 @@
 		A80A46961A8F2409001442C8 /* HW_SlicedImages */ = {
 			isa = PBXGroup;
 			children = (
+				238866041A93718000C71175 /* View */,
 				238866031A93717800C71175 /* Modal */,
 				238866051A93718800C71175 /* Controller */,
 				A80A46A41A8F2409001442C8 /* Images.xcassets */,

@@ -17,8 +17,6 @@
     NSArray *imagesArray;
 }
 @property (weak, nonatomic) IBOutlet UIView *mainView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthOfView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightOfView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
@@ -27,7 +25,6 @@
     [super viewDidLoad];
     
     [self setupSizes];
-    [self resizeMainView];
     [self createArrayOfEmptyImages];
     [self loadImages];
     
@@ -44,12 +41,6 @@
     elemHieght = [self.dict[@"elem_height"] floatValue];
 }
 
-- (void)resizeMainView
-{
-    self.widthOfView.constant = elemWidth * columnsCount;
-    self.heightOfView.constant = elemHieght * rowsCount;
-    [self.mainView setNeedsUpdateConstraints];
-}
 
 - (void)createArrayOfEmptyImages
 {
