@@ -17,7 +17,7 @@
 
 @interface ViewController () <UITabBarDelegate, UITableViewDataSource>
 {
-    NSArray *folders;
+    NSArray *dir;
 }
 @property (nonatomic,strong) UIRefreshControl *refresh;
 @property (nonatomic,weak) IBOutlet UITableView *table;
@@ -37,39 +37,38 @@
 }
 
 -(void)reloadIfNeeded{
-    if (!folders) {
+    if (!dir) {
         [self.refresh beginRefreshing];
         [self reloadData];
     }
 }
 
 -(void)reloadData{
-    [[DataManager sharedInstance] getNames:^(NSArray *arr, NSError *err) {
-        folders = arr;
+    [[DataManager sharedInstance] getNames:^(NSArray *array, NSError *error) {
+        dir = array;
         [self.table reloadData];
         [self.refresh endRefreshing];
     }];
 }
 
-#pragma mark - TableMethods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return folders.count;
+    return dir.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString* cellIdentifier = @"CellIdentifier";
-    MyCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    static NSString* cellId = @"CI";
+    MyCell* cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     
-    cell.folder = folders[indexPath.row];
+    cell.folder = dir[indexPath.row];
     return cell;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSIndexPath *selectedIndex = self.table.indexPathForSelectedRow;
     MyViewController *second = segue.destinationViewController;
-    [second setFolder:folders[selectedIndex.row]];
+    [second setDir:dir[selectedIndex.row]];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

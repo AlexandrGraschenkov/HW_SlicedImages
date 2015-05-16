@@ -14,32 +14,33 @@
 @interface MyViewController () <UIScrollViewDelegate> {
     
 }
+
+@property (nonatomic, strong) UIScrollView *scrollVP;
+@property (nonatomic, strong) UIView *contentViewPointer;
+@property (nonatomic, strong) NSDictionary *views;
+@property (nonatomic, strong) NSDictionary *contentDict;
+@property (nonatomic, strong) NSArray *images;
+@property (nonatomic) NSString *title;
 @property (nonatomic) CGFloat width;
 @property (nonatomic) CGFloat height;
 @property (nonatomic) CGFloat rows;
 @property (nonatomic) CGFloat columns;
-@property (nonatomic, strong) UIScrollView *scrollViewPointer;
-@property (nonatomic, strong) UIView *contentViewPointer;
-@property (nonatomic, strong) NSDictionary *viewsDictionary;
-@property (nonatomic, strong) NSDictionary *contentDict;
-@property (nonatomic, strong) NSArray *pic;
-@property (nonatomic) NSString *name;
 @end
 
 @implementation MyViewController
-@synthesize folder;
+@synthesize dir;
 -(void)viewDidLoad{
     [super viewDidLoad];
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    UIView *contentView = [[UIView alloc] init];
+    UIView *views = [[UIView alloc] init];
     [self.view addSubview:scrollView];
-    [scrollView addSubview:contentView];
+    [scrollView addSubview:views];
     scrollView.translatesAutoresizingMaskIntoConstraints = NO;
-    contentView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.scrollViewPointer = scrollView;
-    self.contentViewPointer = contentView;
+    views.translatesAutoresizingMaskIntoConstraints = NO;
+    self.scrollVP = scrollView;
+    self.contentViewPointer = views;
     [self setSizes];
-    scrollView.maximumZoomScale = 4.0;
+    scrollView.maximumZoomScale = 5.0;
     scrollView.minimumZoomScale = MIN(self.view.bounds.size.width / (self.width*self.columns),
                                       self.view.bounds.size.height / (self.height*self.rows));
     scrollView.delegate = self;
@@ -48,19 +49,19 @@
 }
 
 -(void)setSizes{
-    self.rows = [self.folder[@"rows_count"] floatValue];
-    self.columns = [self.folder[@"columns_count"] floatValue];
-    self.width = [self.folder[@"elem_width"] floatValue];
-    self.height = [self.folder[@"elem_height"] floatValue];
-    self.name = self.folder[@"folder_name"];
+    self.rows = [self.dir[@"rows_count"] floatValue];
+    self.columns = [self.dir[@"columns_count"] floatValue];
+    self.width = [self.dir[@"elem_width"] floatValue];
+    self.height = [self.dir[@"elem_height"] floatValue];
+    self.title = self.dir[@"folder_name"];
     
-    self.viewsDictionary = NSDictionaryOfVariableBindings(_scrollViewPointer, _contentViewPointer);
+    self.views = NSDictionaryOfVariableBindings(_scrollVP, _contentViewPointer);
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_scrollViewPointer]|" options:0 metrics: 0 views:_viewsDictionary]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_scrollViewPointer]|" options:0 metrics: 0 views:_viewsDictionary]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_scrollVP]|" options:0 metrics: 0 views:_views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_scrollVP]|" options:0 metrics: 0 views:_views]];
     
-    [_scrollViewPointer addConstraint:[NSLayoutConstraint
-                                       constraintWithItem:_scrollViewPointer
+    [_scrollVP addConstraint:[NSLayoutConstraint
+                                       constraintWithItem:_scrollVP
                                        attribute:NSLayoutAttributeTrailing
                                        relatedBy:NSLayoutRelationEqual
                                        toItem:_contentViewPointer
@@ -68,24 +69,24 @@
                                        multiplier:1.0
                                        constant:0.0]];
     
-    [_scrollViewPointer addConstraint:[NSLayoutConstraint
+    [_scrollVP addConstraint:[NSLayoutConstraint
                                        constraintWithItem:_contentViewPointer
                                        attribute:NSLayoutAttributeLeading
                                        relatedBy:NSLayoutRelationEqual
-                                       toItem:_scrollViewPointer
+                                       toItem:_scrollVP
                                        attribute:NSLayoutAttributeLeading
                                        multiplier:1.0
                                        constant:0.0]];
-    [_scrollViewPointer addConstraint:[NSLayoutConstraint
+    [_scrollVP addConstraint:[NSLayoutConstraint
                                        constraintWithItem:_contentViewPointer
                                        attribute:NSLayoutAttributeTop
                                        relatedBy:NSLayoutRelationEqual
-                                       toItem:_scrollViewPointer
+                                       toItem:_scrollVP
                                        attribute:NSLayoutAttributeTop
                                        multiplier:1.0
                                        constant:0.0]];
-    [_scrollViewPointer addConstraint:[NSLayoutConstraint
-                                       constraintWithItem:_scrollViewPointer
+    [_scrollVP addConstraint:[NSLayoutConstraint
+                                       constraintWithItem:_scrollVP
                                        attribute:NSLayoutAttributeBottom
                                        relatedBy:NSLayoutRelationEqual
                                        toItem:_contentViewPointer
@@ -113,14 +114,14 @@
         }
         [imageGrid insertObject:[NSArray arrayWithArray:tempRow] atIndex:i];
     }
-    self.pic = [imageGrid copy];
+    self.images = [imageGrid copy];
 }
 -(void)fillGrid{
     for (int i=0; i<self.rows; i++) {
         for (int j=0; j<self.columns; j++) {
-            NSString *strURL = [NSString stringWithFormat:@"https://dl.dropboxusercontent.com/u/55523423/NetExample/%@/%d_%d.png",self.name,i,j];
+            NSString *strURL = [NSString stringWithFormat:@"https://dl.dropboxusercontent.com/u/55523423/NetExample/%@/%d_%d.png",self.title,i,j];
             NSURL *imgURL = [NSURL URLWithString:strURL];
-            [[[self.pic objectAtIndex:i] objectAtIndex:j] sd_setImageWithURL:imgURL];
+            [[[self.images objectAtIndex:i] objectAtIndex:j] sd_setImageWithURL:imgURL];
         }
     }
 }
@@ -147,7 +148,7 @@
     float vPadding = (superviewHeight - contentHeight) / 2.0;
     if (vPadding < 0) vPadding = 0;
     
-    for(NSLayoutConstraint *constraint in _scrollViewPointer.constraints)
+    for(NSLayoutConstraint *constraint in _scrollVP.constraints)
     {
         if (constraint.firstAttribute == 6 || constraint.firstAttribute == 5) {
             constraint.constant = hPadding;

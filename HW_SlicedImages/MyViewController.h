@@ -9,5 +9,5 @@
 #import "ViewController.h"
 
 @interface MyViewController : ViewController
-@property (nonatomic,strong) NSDictionary *folder;
+@property (nonatomic,strong) NSDictionary *dir;
 @end
