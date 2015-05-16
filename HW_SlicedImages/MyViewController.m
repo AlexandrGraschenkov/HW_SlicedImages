@@ -6,14 +6,6 @@
 //  Copyright (c) 2015 Alexander. All rights reserved.
 //
 
-//
-//  SecondController.m
-//  HW_SlicedImages
-//
-//  Created by Артур Сагидулин on 25.02.15.
-//  Copyright (c) 2015 Артур Сагидулин. All rights reserved.
-//
-
 #import "MyViewController.h"
 #import "DataManager.h"
 #import <SDWebImage/UIImageView+WebCache.h>
