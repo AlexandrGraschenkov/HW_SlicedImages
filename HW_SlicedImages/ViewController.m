@@ -10,7 +10,6 @@
 #import "TableCell.h"
 #import "SDWebImage/UIImageView+WebCache.h"
 #import "MyViewController.h"
-
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 {
     NSArray *imgsArray;
@@ -34,6 +33,8 @@
      }];
 }
 #pragma mark - Table view
+
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return imgsArray.count;
@@ -41,8 +42,9 @@
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString* identifier = @"Cell";
-    TableCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    cell.imgs = imgsArray[indexPath.row];
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+   // cell.imgs = imgsArray[indexPath.row];
+    
     cell.textLabel.text = imgsArray[indexPath.row][@"folder_name"];
     return cell;
 }
