@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ImageViewController.h
 //  HW_SlicedImages
 //
 //  Created by Михаил on 14.05.15.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NetManager.h"
 
-@interface ViewController : UIViewController
-
-
+@interface ImageViewController : UIViewController
+@property (nonatomic,strong) NSDictionary *folder;
 @end
-
