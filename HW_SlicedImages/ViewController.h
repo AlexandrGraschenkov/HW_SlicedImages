@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource>
 
+
+@property (nonatomic, strong) UIRefreshControl *refresh;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end
 

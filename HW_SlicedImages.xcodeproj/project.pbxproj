@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C004FB1B09627E0046F3FF /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C004FA1B09627E0046F3FF /* NetManager.m */; };
+		84C005011B0966740046F3FF /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C005001B0966740046F3FF /* ScrollViewController.m */; };
+		84C005041B096B160046F3FF /* URLList.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C005031B096B160046F3FF /* URLList.m */; };
+		84C0054A1B09786E0046F3FF /* SDWebImage-3.7-2.2 in Resources */ = {isa = PBXBuildFile; fileRef = 84C005491B09786E0046F3FF /* SDWebImage-3.7-2.2 */; };
 		A80A469A1A8F2409001442C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A46991A8F2409001442C8 /* main.m */; };
 		A80A469D1A8F2409001442C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A469C1A8F2409001442C8 /* AppDelegate.m */; };
 		A80A46A01A8F2409001442C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A469F1A8F2409001442C8 /* ViewController.m */; };
@@ -27,6 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84C004F91B09627E0046F3FF /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		84C004FA1B09627E0046F3FF /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
+		84C004FF1B0966740046F3FF /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		84C005001B0966740046F3FF /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		84C005021B096B160046F3FF /* URLList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLList.h; sourceTree = "<group>"; };
+		84C005031B096B160046F3FF /* URLList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLList.m; sourceTree = "<group>"; };
+		84C005491B09786E0046F3FF /* SDWebImage-3.7-2.2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SDWebImage-3.7-2.2"; path = "../../Downloads/SDWebImage-3.7-2.2"; sourceTree = "<group>"; };
 		A80A46941A8F2409001442C8 /* HW_SlicedImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_SlicedImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A46981A8F2409001442C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A80A46991A8F2409001442C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,9 +71,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84C004F61B0962090046F3FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A80A469C1A8F2409001442C8 /* AppDelegate.m */,
+				A80A469B1A8F2409001442C8 /* AppDelegate.h */,
+				84C004F91B09627E0046F3FF /* NetManager.h */,
+				84C004FA1B09627E0046F3FF /* NetManager.m */,
+				84C005021B096B160046F3FF /* URLList.h */,
+				84C005031B096B160046F3FF /* URLList.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84C004F71B0962150046F3FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A80A46A61A8F2409001442C8 /* LaunchScreen.xib */,
+				A80A46A11A8F2409001442C8 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84C004F81B0962220046F3FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A80A469F1A8F2409001442C8 /* ViewController.m */,
+				A80A469E1A8F2409001442C8 /* ViewController.h */,
+				84C004FF1B0966740046F3FF /* ScrollViewController.h */,
+				84C005001B0966740046F3FF /* ScrollViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		A80A468B1A8F2409001442C8 = {
 			isa = PBXGroup;
 			children = (
+				84C005491B09786E0046F3FF /* SDWebImage-3.7-2.2 */,
 				A80A46961A8F2409001442C8 /* HW_SlicedImages */,
 				A80A46B01A8F2409001442C8 /* HW_SlicedImagesTests */,
 				A80A46951A8F2409001442C8 /* Products */,
@@ -81,13 +126,10 @@
 		A80A46961A8F2409001442C8 /* HW_SlicedImages */ = {
 			isa = PBXGroup;
 			children = (
-				A80A469B1A8F2409001442C8 /* AppDelegate.h */,
-				A80A469C1A8F2409001442C8 /* AppDelegate.m */,
-				A80A469E1A8F2409001442C8 /* ViewController.h */,
-				A80A469F1A8F2409001442C8 /* ViewController.m */,
-				A80A46A11A8F2409001442C8 /* Main.storyboard */,
+				84C004F81B0962220046F3FF /* Controller */,
+				84C004F71B0962150046F3FF /* View */,
+				84C004F61B0962090046F3FF /* Model */,
 				A80A46A41A8F2409001442C8 /* Images.xcassets */,
-				A80A46A61A8F2409001442C8 /* LaunchScreen.xib */,
 				A80A46971A8F2409001442C8 /* Supporting Files */,
 			);
 			path = HW_SlicedImages;
@@ -201,6 +243,7 @@
 			files = (
 				A80A46A31A8F2409001442C8 /* Main.storyboard in Resources */,
 				A80A46A81A8F2409001442C8 /* LaunchScreen.xib in Resources */,
+				84C0054A1B09786E0046F3FF /* SDWebImage-3.7-2.2 in Resources */,
 				A80A46A51A8F2409001442C8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C005011B0966740046F3FF /* ScrollViewController.m in Sources */,
 				A80A46A01A8F2409001442C8 /* ViewController.m in Sources */,
+				84C004FB1B09627E0046F3FF /* NetManager.m in Sources */,
 				A80A469D1A8F2409001442C8 /* AppDelegate.m in Sources */,
 				A80A469A1A8F2409001442C8 /* main.m in Sources */,
+				84C005041B096B160046F3FF /* URLList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +458,7 @@
 				A80A46B91A8F2409001442C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A80A46BA1A8F2409001442C8 /* Build configuration list for PBXNativeTarget "HW_SlicedImagesTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +467,7 @@
 				A80A46BC1A8F2409001442C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
