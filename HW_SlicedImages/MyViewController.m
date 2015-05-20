@@ -18,12 +18,7 @@
 }
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthOfView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightOfView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintLeft;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintRight;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTop;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintBottom;
+
 
 @end
 @implementation MyViewController
@@ -33,13 +28,12 @@
     [self setupSizes];
     [self createArrayOfEmptyImages];
     [self loadImages];
+    [self resizeView];
     
     self.scrollView.delegate = self;
-    float minZoom = MIN(self.view.bounds.size.width / self.widthOfView.constant,
-                        self.view.bounds.size.height / self.heightOfView.constant);
-    self.scrollView.minimumZoomScale = (minZoom < 1) ? minZoom : 1;
+    self.scrollView.minimumZoomScale=0.5;
     self.scrollView.maximumZoomScale=6.0;
-
+  
 }
 
 - (void)setupSizes
@@ -82,6 +76,12 @@
     return self.mainView;
 }
 
+- (void)resizeView
+{
+    CGRect frame =  CGRectMake(self.mainView.frame.origin.x, self.mainView.frame.origin.y, elemWidth * columnsCount, elemHieght*rowsCount);
+    [self.mainView setFrame:frame];
+}
+
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView
 {
     float imageWidth = self.mainView.frame.size.width;
@@ -97,11 +97,6 @@
     float vPadding = (viewHeight - imageHeight) / 2.0;
     if (vPadding < 0) vPadding = 0;
     
-//    self.constraintLeft.constant = hPadding;
-//    self.constraintRight.constant = hPadding;
-//    self.constraintTop.constant = vPadding;
-//    self.constraintBottom.constant = vPadding;
-//    
     // Makes zoom out animation smooth and starting from the right point not from (0, 0)
     [self.view layoutIfNeeded];
 }

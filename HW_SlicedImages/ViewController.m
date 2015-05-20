@@ -25,7 +25,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [self reloadData];
     });
-   // [self reloadData];
+    
 }
 
 -(void)reloadData
@@ -47,7 +47,7 @@
 {
     static NSString* identifier = @"Cell";
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-   // cell.imgs = imgsArray[indexPath.row];
+    // cell.imgs = imgsArray[indexPath.row];
     
     cell.textLabel.text = imgsArray[indexPath.row][@"folder_name"];
     return cell;

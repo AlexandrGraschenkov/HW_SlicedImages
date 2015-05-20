@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1RC-0O-chc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1RC-0O-chc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -27,16 +26,13 @@
         <scene sceneID="PT3-ab-zlo">
             <objects>
                 <viewController id="jgl-0i-ZCb" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qNy-bK-94J"/>
-                        <viewControllerLayoutGuide type="bottom" id="DnJ-Ey-MYK"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nj5-SE-iba">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Frg-VL-Own">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Frg-VL-Own">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="UV0-iI-t1Q" style="IBUITableViewCellStyleDefault" id="ETg-Yv-v74">
@@ -64,10 +60,6 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Frg-VL-Own" firstAttribute="leading" secondItem="nj5-SE-iba" secondAttribute="leadingMargin" constant="-16" id="E4A-Jp-vOl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Frg-VL-Own" secondAttribute="trailing" constant="-16" id="FOK-Hk-7Pt"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WKB-m8-LtT"/>
                     <connections>
@@ -82,53 +74,31 @@
         <scene sceneID="dz5-fJ-uWj">
             <objects>
                 <viewController id="63E-2s-8Ki" customClass="MyViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="O8t-Om-Maj"/>
-                        <viewControllerLayoutGuide type="bottom" id="y1y-ky-eT0"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HDY-u9-OJI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1gb-cd-Whp">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="1gb-cd-Whp">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="17l-qC-mHo">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <view contentMode="scaleToFill" id="17l-qC-mHo">
+                                        <rect key="frame" x="0.0" y="0.0" width="1320" height="1568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="17l-qC-mHo" secondAttribute="trailing" id="49b-1c-2se"/>
-                                    <constraint firstAttribute="height" constant="568" id="4pc-h0-2gi"/>
-                                    <constraint firstItem="17l-qC-mHo" firstAttribute="top" secondItem="1gb-cd-Whp" secondAttribute="top" id="52P-Nx-wcs"/>
-                                    <constraint firstAttribute="width" constant="320" id="6HL-MV-TDI"/>
-                                    <constraint firstItem="17l-qC-mHo" firstAttribute="leading" secondItem="1gb-cd-Whp" secondAttribute="leading" id="NBM-7a-w1q"/>
-                                    <constraint firstAttribute="bottom" secondItem="17l-qC-mHo" secondAttribute="bottom" id="yDF-2I-UpF"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="63E-2s-8Ki" id="p7W-Ib-qFk"/>
                                 </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="1gb-cd-Whp" firstAttribute="leading" secondItem="HDY-u9-OJI" secondAttribute="leading" id="RZd-FL-vKi"/>
-                            <constraint firstItem="1gb-cd-Whp" firstAttribute="bottom" secondItem="y1y-ky-eT0" secondAttribute="top" id="eGs-JZ-rP0"/>
-                            <constraint firstAttribute="trailing" secondItem="1gb-cd-Whp" secondAttribute="trailing" id="eup-oz-jDb"/>
-                            <constraint firstItem="1gb-cd-Whp" firstAttribute="top" secondItem="HDY-u9-OJI" secondAttribute="top" id="mZz-K8-sZl"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nmb-Us-YJQ"/>
                     <connections>
-                        <outlet property="constraintBottom" destination="yDF-2I-UpF" id="CgP-6N-Rx7"/>
-                        <outlet property="constraintLeft" destination="NBM-7a-w1q" id="rje-Lh-11N"/>
-                        <outlet property="constraintRight" destination="49b-1c-2se" id="3fq-FJ-1kJ"/>
-                        <outlet property="constraintTop" destination="52P-Nx-wcs" id="FSr-zB-PhK"/>
-                        <outlet property="heightOfView" destination="4pc-h0-2gi" id="PIx-hc-gIK"/>
                         <outlet property="mainView" destination="17l-qC-mHo" id="SGV-Ta-s0f"/>
                         <outlet property="scrollView" destination="1gb-cd-Whp" id="9YK-h4-IWR"/>
-                        <outlet property="widthOfView" destination="6HL-MV-TDI" id="ydU-rb-UkM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCZ-Lg-dGd" userLabel="First Responder" sceneMemberID="firstResponder"/>

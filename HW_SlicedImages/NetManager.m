@@ -23,26 +23,28 @@
 -(void)getTtiles:(void(^)(NSArray *, NSError *))
 completion{
     NSURL *url = [NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/55523423/NetExample/ListImages.json"];
-
-NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse * response, NSError *error) {
+    
+    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse * response, NSError *error) {
         if(!error){
-        NSArray *objects = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+            NSArray *objects = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
             
             if(!error){
                 dispatch_async(dispatch_get_main_queue(), ^{
                     completion(objects,nil);
-                    return;
+                    
                 });
-                
+                return;
             }
         }
-    completion(nil, error);
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            completion(nil,error);
-//        });
-        }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(nil, error);
+        });
+        //        dispatch_async(dispatch_get_main_queue(), ^{
+        //            completion(nil,error);
+        //        });
+    }];
     [task resume];
-        
+    
 }
 
 @end

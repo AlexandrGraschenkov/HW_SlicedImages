@@ -16,7 +16,7 @@
 
 @implementation Cell
 
--(void)setFolder:(NSDictionary *)folder{
+- (void)setFolder:(NSDictionary *)folder{
     _folder = folder;
     NSString *fName = folder[@"folder_name"];
     self.label.text = fName;
