@@ -29,11 +29,17 @@ NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url c
         NSArray *objects = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
             
             if(!error){
-                completion(objects,nil);
-                return;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completion(objects,nil);
+                    return;
+                });
+                
             }
         }
-        completion(nil,error);
+    completion(nil, error);
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            completion(nil,error);
+//        });
         }];
     [task resume];
         

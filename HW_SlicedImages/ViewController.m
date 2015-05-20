@@ -21,7 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self reloadData];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self reloadData];
+    });
+   // [self reloadData];
 }
 
 -(void)reloadData

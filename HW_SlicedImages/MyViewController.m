@@ -97,11 +97,11 @@
     float vPadding = (viewHeight - imageHeight) / 2.0;
     if (vPadding < 0) vPadding = 0;
     
-    self.constraintLeft.constant = hPadding;
-    self.constraintRight.constant = hPadding;
-    self.constraintTop.constant = vPadding;
-    self.constraintBottom.constant = vPadding;
-    
+//    self.constraintLeft.constant = hPadding;
+//    self.constraintRight.constant = hPadding;
+//    self.constraintTop.constant = vPadding;
+//    self.constraintBottom.constant = vPadding;
+//    
     // Makes zoom out animation smooth and starting from the right point not from (0, 0)
     [self.view layoutIfNeeded];
 }

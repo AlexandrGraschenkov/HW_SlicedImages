@@ -74,7 +74,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		238866031A93717800C71175 /* Modal */ = {
+		238866031A93717800C71175 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				238A9F3F1A94BBB700CFF992 /* NetManager.h */,
@@ -82,7 +82,7 @@
 				A80A469B1A8F2409001442C8 /* AppDelegate.h */,
 				A80A469C1A8F2409001442C8 /* AppDelegate.m */,
 			);
-			name = Modal;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		238866041A93718000C71175 /* View */ = {
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				238866041A93718000C71175 /* View */,
-				238866031A93717800C71175 /* Modal */,
+				238866031A93717800C71175 /* Model */,
 				238866051A93718800C71175 /* Controller */,
 				A80A46A41A8F2409001442C8 /* Images.xcassets */,
 				A80A46971A8F2409001442C8 /* Supporting Files */,
