@@ -44,6 +44,19 @@
     elemHieght = [self.dict[@"elem_height"] floatValue];
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    CGSize viewSize = self.scrollView.frame.size;
+    viewSize.height -= self.scrollView.contentInset.top;
+    self.scrollView.minimumZoomScale = MIN(viewSize.width / self.mainView.bounds.size.width, viewSize.height / self.mainView.bounds.size.height);
+    [UIView animateWithDuration:0.3 animations:^{
+        self.scrollView.zoomScale = MAX(self.scrollView.zoomScale, self.scrollView.minimumZoomScale);
+    }];
+    
+    [self scrollViewDidZoom:self.scrollView];
+}
+
 
 - (void)createArrayOfEmptyImages
 {
@@ -80,6 +93,7 @@
 {
     CGRect frame =  CGRectMake(self.mainView.frame.origin.x, self.mainView.frame.origin.y, elemWidth * columnsCount, elemHieght*rowsCount);
     [self.mainView setFrame:frame];
+    self.scrollView.contentSize = frame.size;
 }
 
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView
@@ -96,6 +110,12 @@
     
     float vPadding = (viewHeight - imageHeight) / 2.0;
     if (vPadding < 0) vPadding = 0;
+    
+    CGRect frame = self.mainView.frame;
+    frame.origin.x = hPadding;
+    frame.origin.y = vPadding;
+    self.mainView.frame = frame;
+    // Иначе этот код ничего не делает. Ты вычисляешь смещение, а потом его не используешь.
     
     // Makes zoom out animation smooth and starting from the right point not from (0, 0)
     [self.view layoutIfNeeded];
